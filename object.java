@@ -3,7 +3,9 @@ import java.io.Console;
 /**
  * object
  */
-public class Object {
+
+public class object 
+{
     String requiredValue;
     String optionalValue;
 
@@ -12,7 +14,7 @@ public class Object {
         return requiredValue;
     }
 
-    public void  setRequiredValue(String value) {
+    public void  setRequiredValue(final String value) {
         requiredValue = value;
     }
 
@@ -20,19 +22,20 @@ public class Object {
         return optionalValue;
     }
 
-    public void setOptionaldValue(String value) {
+    public void setOptionaldValue(final String value) {
         optionalValue = value;
     }
 
     public static void main(final String[] args) {
-        Object obj1 = new Object();
+        final object obj1 = new object();
         obj1.setRequiredValue("Required");
         obj1.setOptionaldValue( "Optional");
 
-        Object obj2 = new Object();
-        obj1.setRequiredValue("New Required");
+        final object obj2 = new object();
+        obj2.setRequiredValue("New Required");
         
-        Console.writeLine(JSON.stringify(obj1));
-        Console.writeLine(JSON.stringify(obj2));
+        System.out.println(obj1.getRequiredValue() + " "+obj1.getOptionalValue());
+        System.out.println(obj2.getRequiredValue() + " "+obj2.getOptionalValue());
+        //hello 2
     }
 }
