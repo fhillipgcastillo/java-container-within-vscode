@@ -16,3 +16,6 @@
   * Using VS Code Remote Development extension
     * Run the run_java_object.sh will compile and run the project file
       * ./run_java_object.sh
+
+## Doc for multi accounts
+source: https://itnext.io/setup-git-with-multiple-configs-9b4111d6928c
